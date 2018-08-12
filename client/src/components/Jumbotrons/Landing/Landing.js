@@ -1,12 +1,22 @@
 import React from "react";
+import images from "../../../images/mia.JPG";
+
+const styling={
+    backgroundImage: "url(" + images + ")",
+    backgroundSize: "contain",    
+    backgroundPosition: "right",
+    backgroundRepeat: "no-repeat",
+    height: 650,
+    backgroundColor: "#BDC2C8",
+    padding: 30
+}
 
 const Landing = ()=>(
-<div>
-    <div className="jumbotron" id="top">
-        <p className="lead" id="tag">The Ambassador...
+<div style = {styling}>
+       <p className="lead" id="tag">The Ambassador...
         DJ Guaranteed-Fresh!!!</p>
     </div> 
-</div>
+
 )
 
 export default Landing; 
