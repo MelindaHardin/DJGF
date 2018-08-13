@@ -1,14 +1,14 @@
 import React from "react";
 
+const styling ={
+ marginTop:50
+}
+
 const Mixes = props => (
      
-<div key={props.id} className="card" onClick={() => props.handleClicked(props.id)}>
-    <div className="img-container">
-    
-      <img alt={props.name} src={props.image} />
-      
-      
-    </div>
-  </div>
+<div style={styling}>
+<h4 className="display-4">Mixes</h4>
+
+</div>
 );
 export default Mixes;

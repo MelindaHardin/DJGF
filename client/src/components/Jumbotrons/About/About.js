@@ -3,17 +3,18 @@ import { Parallax } from 'react-parallax';
 
 const styling ={
   inside: {
-    marginTop: 80  
+    marginTop: 80, 
+    marginBottom: 180 
   },
   outside: {
-    height: 50, 
-    marginBottom: 180  
+    marginBottom: 250  
   }
 }
 
 const About =()=>(
 
     <Parallax
+    style = {styling.outside}
     blur={9}
     bgImage={require('../../../images/turntable.jpg')}
     bgImageAlt="turntable"
@@ -39,11 +40,7 @@ const About =()=>(
         emotion, you got life, we breathing, we blessed. Put it this way, it took me twenty five years to get these plants,
         twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.</p>
     </div>
-
-    <div style={styling.outside} />
   </Parallax>
-
-
 )
 
 export default About;
