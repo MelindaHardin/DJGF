@@ -1,8 +1,14 @@
 import React from "react";
-import { Parallax, Background } from 'react-parallax';
+import { Parallax } from 'react-parallax';
 
 const styling ={
-  marginTop: 80
+  inside: {
+    marginTop: 80  
+  },
+  outside: {
+    height: 50, 
+    marginBottom: 180  
+  }
 }
 
 const About =()=>(
@@ -10,12 +16,12 @@ const About =()=>(
     <Parallax
     blur={9}
     bgImage={require('../../../images/turntable.jpg')}
-    bgImageAlt="the cat"
-    strength={200}
+    bgImageAlt="turntable"
+    strength={300}
   >
-    <div style={styling} class="container" >
-      <h4 class="display-4">About</h4>
-      <p class="lead">Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going
+    <div style={styling.inside} className="container"id="about">
+      <h4 className="display-4">About</h4>
+      <p className="lead">Egg whites, turkey sausage, wheat toast, water. Of course they don’t want us to eat our breakfast, so we are going
         to enjoy our breakfast. The key is to enjoy life, because they don’t want you to enjoy life. I promise you, they
         don’t want you to jetski, they don’t want you to smile. Surround yourself with angels. It’s on you how you want to
         live your life. Everyone has a choice. I pick my choice, squeaky clean. Mogul talk. It’s important to use cocoa butter.
@@ -34,7 +40,7 @@ const About =()=>(
         twenty five years of blood sweat and tears, and I’m never giving up, I’m just getting started.</p>
     </div>
 
-    <div style={{ height: '200px' }} />
+    <div style={styling.outside} />
   </Parallax>
 
 
