@@ -1,17 +1,35 @@
 import React from "react";
+import { Parallax } from 'react-parallax';
 
+const styling ={
+  inside: {
+    marginTop: 80, 
+    marginBottom: 280 
+  },
+  outside: {
+    marginBottom: 250  
+  }
+}
 const Sets=()=>(
-<div class="jumbotron jumbotron-fluid" id="sets">
-  <div class="container">
-    <h3 class="display-4">Sets</h3>
-    <div class="card w-100">
-        <div class="card-body">
-          <h5 class="card-title">Coming Soon</h5>
-          <h6 class="card-text">A photo collage of previous even setups.</h6>
+<Parallax
+    style = {styling.outside}
+    blur={12}
+    bgImage={require('../../../images/turntable.jpg')}
+    bgImageAlt="turntable"
+    strength={300}
+  >
+    <div style= {styling.inside} id="sets">
+      <div className="container">
+        <h4 className="display-4">Sets</h4>
+        <div className="card w-100 h-200">
+            <div className="card-body">
+              <h5 className="card-title">Coming Soon</h5>
+              <h6 className="card-text">A photo collage of previous even setups.</h6>
+            </div>
         </div>
+      </div>
     </div>
-  </div>
-</div>
+</Parallax>
 )
 
 export default Sets;

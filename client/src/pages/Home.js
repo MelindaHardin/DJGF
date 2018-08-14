@@ -7,15 +7,18 @@ import Mixes from "../components/Jumbotrons/Mixes";
 import Sets from "../components/Jumbotrons/Sets";
 import Contact from "../components/Jumbotrons/Contact";
 
+const styling = {
+  backgroundColor: "black"
+}
 const Home =()=>(
-<div>
+<div style={styling}>
   <Parallax
     blur={-15}
     bgImage={require('../images/logoBlack.png')}
     bgImageAlt="G-Fresh logo"
     bgWidth= "auto"
     bgHeight= "auto"
-    strength={450}
+    strength={425}
   >
     <Landing/>
     <About/>
@@ -24,10 +27,8 @@ const Home =()=>(
       <Mixes/>
     </Jumbotron>
 
-    <Jumbotron>
-      <Sets/>
-    </Jumbotron>
-
+    <Sets/>
+  
     <Jumbotron>
       <Contact/>
     </Jumbotron>

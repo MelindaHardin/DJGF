@@ -1,12 +1,10 @@
 import React from "react";
 
-const styling ={
- marginTop:50
-}
+
 
 const Mixes = props => (
      
-<div style={styling}>
+<div>
 <h4 className="display-4">Mixes</h4>
 
 </div>
