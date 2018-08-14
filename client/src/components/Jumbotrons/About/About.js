@@ -15,7 +15,7 @@ const About =()=>(
 
     <Parallax
     style = {styling.outside}
-    blur={12}
+    blur={{ min: -4, max: 15 }}
     bgImage={require('../../../images/turntable2.jpg')}
     bgImageAlt="turntable"
     strength={300}

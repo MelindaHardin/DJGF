@@ -10,6 +10,7 @@ import Contact from "../components/Jumbotrons/Contact";
 const styling = {
   backgroundColor: "black"
 }
+
 const Home =()=>(
 <div style={styling}>
   <Parallax
