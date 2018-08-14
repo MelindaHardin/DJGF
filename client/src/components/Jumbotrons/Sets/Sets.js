@@ -4,7 +4,7 @@ import { Parallax } from 'react-parallax';
 const styling ={
   inside: {
     marginTop: 80, 
-    marginBottom: 280 
+    marginBottom: 150 
   },
   outside: {
     marginBottom: 250  
