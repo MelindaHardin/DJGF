@@ -9,7 +9,7 @@ const styling={
   height: 650,
   backgroundColor: "#BDC2C8",
   padding: 10,
-  marginBottom: 250
+  marginBottom: 280
 }
 
 const Landing = ()=>(

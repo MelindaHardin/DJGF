@@ -1,7 +1,7 @@
 import React from "react"; 
 
 const styling ={
-  marginBottom: 180
+  marginBottom: 280
 }
 
 const Jumbotron = props =>(
