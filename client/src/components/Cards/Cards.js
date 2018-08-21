@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component }from "react";
 import albums from "../../albums.json";
 
 const styling = {
@@ -7,7 +7,14 @@ const styling = {
   }
 }
 
-class Cards extends React.Component{
+// const albumCovers = albums.map((albums)=>
+    
+    
+    
+// )
+
+
+class Cards extends Component{
 
   state = {
     albums,
@@ -16,13 +23,14 @@ class Cards extends React.Component{
 
 
   handleClicked = id =>{
-
+    //FUNCTION HERE THAT SHOWS THE MODAL FOR THE BACK OF THE ALBUM COVER
 
   }
 
   render (){
 
     return (
+     
       <div className="row justify-content-center">
         <div className="col-4">
             <div className="card" style= {styling.cards}>
