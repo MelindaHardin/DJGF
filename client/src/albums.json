@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Elemental Vibes",
-        "front": "images/ev_front.jpg",
+        "cover": "images/ev_front.jpg",
         "back": "images/ev_back.jpg",
         "details": "blah blah blah EV",
         "clicked": false
@@ -10,7 +10,7 @@
     {
         "id": 2,
         "name": "Christina Milian",
-        "front": "images/cm_front.jpg",
+        "cover": "images/cm_front.jpg",
         "back": "images/cm_bakckjpg",
         "details": "blah blah blah CM",
         "clicked": false
