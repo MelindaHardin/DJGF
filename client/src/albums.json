@@ -2,17 +2,17 @@
     {
         "id": 1,
         "name": "Elemental Vibes",
-        "cover": "images/ev_front.jpg",
+        "front": "images/ev_front.jpg",
         "back": "images/ev_back.jpg",
-        "details": "blah blah blah EV",
+        "details": "Elemental Vibes Elemental Vibes Elemental Vibes",
         "clicked": false
     }, 
     {
         "id": 2,
         "name": "Christina Milian",
-        "cover": "images/cm_front.jpg",
-        "back": "images/cm_bakckjpg",
-        "details": "blah blah blah CM",
+        "front": "images/cm_front.jpg",
+        "back": "images/cm_backjpg",
+        "details": "Milian Milian Milian Milian Milian",
         "clicked": false
     }
 ]

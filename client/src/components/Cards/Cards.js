@@ -12,14 +12,13 @@ const Cards = props =>(
     <div className="row justify-content-center">
        <div className="col-4">
            <div className="card" style= {styling.cards}>
-             <img className="card-img-top" src={props.cover} alt={props.name}/>
+             <img className="card-img-top" src={props.front} alt={props.name}/>
              <div className="card-body">
                <h5 className="card-title">{props.name}</h5>
-             
                <p className="card-text">{props.details}</p>
-               <button type="button" className="btn btn-primary" data-toggle="modal">
+                <button type="button" className="btn btn-primary" data-toggle="modal">
                    View Songs
-                 </button>
+                </button>
              </div>
            </div>
        </div>

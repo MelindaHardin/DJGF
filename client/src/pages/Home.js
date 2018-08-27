@@ -43,9 +43,10 @@ handleClicked = id => {
           <Mixes>
             {this.state.albums.map(Album => (
               <Cards
-              name={Album.name}
-              image= {Album.cover}
               id = {Album.id}
+              front= {Album.front}
+              name={Album.name}
+              details = {Album.details}
               handleClicked={this.handleClicked}
             />
             ))}            

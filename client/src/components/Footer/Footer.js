@@ -3,8 +3,8 @@ import FooterTitle from "../FooterTitle/FooterTitle"
 
 const Footer = ()=>(
 <div >
-  <nav class="navbar-footer navbar-dark bg-dark">
-    <a class="navbar-brand" href="#">
+  <nav className="navbar-footer navbar-dark bg-dark">
+    <a className="navbar-brand">
     <FooterTitle/>
     </a>
   </nav>
