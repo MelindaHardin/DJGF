@@ -36,29 +36,31 @@ handleClicked = id => {
         bgHeight= "auto"
         strength={425}
       >
-        <Landing/>
-        <About/>
+        <Landing />
+        <About />
         
         <Jumbotron>
           <Mixes>
-            {this.state.albums.map(Album => (
-              <Cards
-              id = {Album.id}
-              front= {Album.front}
-              name={Album.name}
-              details = {Album.details}
-              handleClicked={this.handleClicked}
-            />
-            ))}            
+            {this.state.albums.map(Album => {
+              return (
+                <Cards
+                key = {Album.id}
+                front= {Album.front}
+                name={Album.name}
+                details = {Album.details}
+                handleClicked={this.handleClicked}
+              />
+              );
+            })}            
           </Mixes>
         </Jumbotron>
 
-        <Sets/>
+        <Sets />
       
         <Jumbotron>
-          <Contact/>
+          <Contact />
         </Jumbotron>
-      
+
       </Parallax>   
 
     </div>

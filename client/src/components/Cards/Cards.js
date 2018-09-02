@@ -8,8 +8,7 @@ const styling = {
 
 const Cards = props =>(
 
-  <div>
-    <div className="row justify-content-center">
+    <div key = {props.id} className="row justify-content-center">
        <div className="col-4">
            <div className="card" style= {styling.cards}>
              <img className="card-img-top" src={props.front} alt={props.name}/>
@@ -23,8 +22,6 @@ const Cards = props =>(
            </div>
        </div>
     </div>
-  </div>
-
 )
 export default Cards;
 
