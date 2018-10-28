@@ -3,7 +3,7 @@ const app = express();
 const bodyParser = require ("body-parser");
 const mongoose= require("mongoose");
 const PORT = process.env.PORT || 3001;
-const routes = require ("./routes/routes");
+const routes = require ("./routes/api/routes");
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -15,8 +15,8 @@ app.use(express.static("client/build"))
 app.use(routes);
 
 mongoose.connect(
-    process.env.MONGODB_URI || "mongodb://localhost/djalbums"
-)
+    process.env.MONGODB_URI || "mongodb://localhost/djgfresh"
+);
 
 app.listen(PORT, function(){
     console.log("Server is listening on PORT: " + PORT)
